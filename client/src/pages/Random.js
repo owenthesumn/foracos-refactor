@@ -12,13 +12,13 @@ const Random = () => {
     return (
         <React.Fragment>
             <section className="h-screen w-screen bg-gray-300 flex flex-col justify-center items-center text-sans">
-                <article className="h-screen w-screen flex flex-col lg:flex-row bg-gray-300 pt-16 sm:pt-20">
+                <article className="h-screen w-screen flex flex-col full:flex-row bg-gray-300 pt-16 sm:pt-20">
                     <div className="flex-1 flex items-center justify-center">
                         <div className="p-10 flex flex-col justify-center">
-                            <h1 className="text-3xl sm:text-5xl lg:text-7xl">Can't Decide?</h1>
-                            <h2 className="text-md sm:text-xl lg:text-3xl mt-1">Press the button to find a random organization to donate to.</h2>
+                            <h1 className="text-3xl sm:text-5xl full:text-7xl">Can't Decide?</h1>
+                            <h2 className="text-md sm:text-xl full:text-3xl mt-1">Press the button to find a random organization to donate to.</h2>
                             <span className="h-full w-full flex justify-center items-center mt-3 sm:mt-10">
-                                <button className="h-8 w-30 sm:h-14 sm:w-44 text-xs sm:text-lg lg:text-xl bg-white rounded-full" onClick={randomize}>Find Organization</button>
+                                <button className="h-8 w-30 sm:h-14 sm:w-44 text-xs sm:text-full full:text-xl bg-white rounded-full" onClick={randomize}>Find Organization</button>
                             </span>
                         </div>
                     </div>

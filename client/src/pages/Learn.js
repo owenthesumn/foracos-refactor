@@ -24,8 +24,8 @@ const Learn = () => {
 
     const LearnContainer = () => {
         return (
-            <section className="w-screen flex justify-center">
-                <article className="h-full w-90p grid grid-cols-1 auto-rows-auto gap-4">
+            <section className="h-screen w-screen flex justify-center">
+                <article className="h-full w-90p grid grid-cols-1 auto-rows-auto gap-4 phone2:gap-4">
                     <LearnCard/>
                     <LearnCard/>
                     <LearnCard/>

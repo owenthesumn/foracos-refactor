@@ -12,8 +12,8 @@ const About = () => {
     return (
         <React.Fragment>
             <main className="h-screen bg-gray-200 z-30 pt-16 sm:pt-20 flex flex-col justify-center items-center p-10">
-                <h1 className="text-4xl sm:text-7xl md:text-10xl xl:text-13xl">foracos.org</h1>
-                <h3 className="text-md sm:text-2xl md:text-4xl">A non-profit organization that aims to help various causes around the world.</h3>
+                <h1 className="text-7xl half:text-10xl full:text-13xl">foracos.org</h1>
+                <h3 className="text-2xl half:text-4xl">A non-profit organization that aims to help various causes around the world.</h3>
             </main>
         </React.Fragment>
     );

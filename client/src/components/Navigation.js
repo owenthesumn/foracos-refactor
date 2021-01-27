@@ -27,7 +27,7 @@ const Navigation = ({setToggleCategories, toggleCategories, toggleDetails, mobil
     const NavButtons = () => {
         return (
             <React.Fragment>
-                <nav className="w-96 bg-black text-lg sm:w-96 sm:flex sm:justify-between sm:items-center sm:text-gray-100 sm:text-lg">
+                <nav className="w-96 bg-black text-lg sm:w-96 sm:flex sm:justify-between sm:items-center sm:text-gray-100">
                     <span className="w-auto">
                         <h2 className="cursor-pointer">
                             <Link to="/">
@@ -139,7 +139,7 @@ const Navigation = ({setToggleCategories, toggleCategories, toggleDetails, mobil
             <div className="fixed z-40">
             {toggle && <MobileNavButtons/>}
             <section className="z-40 fixed shadow-lg">
-                <article className="h-15 sm:h-20 w-screen bg-black flex justify-between items-center px-4 sm:px-10 text-gray-100">
+                <article className="h-15 sm:h-20 w-screen bg-black flex justify-between items-center px-6 sm:px-10 text-gray-100">
                     <h2 className="text-3xl sm:text-4xl">
                         <Link to="/">
                             foracos

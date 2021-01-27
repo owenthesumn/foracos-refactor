@@ -9,8 +9,8 @@ const OrgSlider = ({setToggleDetails}) => {
     function SampleNextArrow(props) {
         const { style, onClick } = props;
         return (            
-        <span className="flex items-center justify-center absolute top-0 bottom-0 -right-10 md:-right-20 lg:-right-30 xl:-right-40 z-10">
-            <BiChevronRight className="m-1 my-auto h-10 w-10 md:h-30 md:w-30 xl:h-40 xl:w-40 text-gray-300 transform hover:scale-110 cursor-pointer" style={{ ...style, color: "black"}} onClick={onClick}/>
+        <span className="flex items-center justify-center absolute top-0 bottom-0 -right-10 tablet:-right-20 3quart:-right-30 full:-right-40 z-10">
+            <BiChevronRight className="m-1 my-auto h-10 w-10 tablet:h-30 tablet:w-30 full:h-40 full:w-40 text-gray-300 transform hover:scale-110 cursor-pointer" style={{ ...style, color: "black"}} onClick={onClick}/>
         </span>
         );
     }
@@ -18,8 +18,8 @@ const OrgSlider = ({setToggleDetails}) => {
     function SamplePrevArrow(props) {
         const { style, onClick } = props;
         return (
-            <span className="flex items-center justify-center absolute top-0 bottom-0 -left-10 md:-left-20 lg:-left-30 xl:-left-40 z-10">
-                <BiChevronLeft className="m-1 my-auto h-10 w-10 md:h-30 md:w-30 xl:h-40 xl:w-40 text-gray-300 transform hover:scale-110 cursor-pointer" style={{ ...style, color: "black"}} onClick={onClick}/>
+            <span className="flex items-center justify-center absolute top-0 bottom-0 -left-10 tablet:-left-20 3quart:-left-30 full:-left-40 z-10">
+                <BiChevronLeft className="m-1 my-auto h-10 w-10 tablet:h-30 tablet:w-30 full:h-40 full:w-40 text-gray-300 transform hover:scale-110 cursor-pointer" style={{ ...style, color: "black"}} onClick={onClick}/>
             </span>
         );
     }
@@ -34,7 +34,7 @@ const OrgSlider = ({setToggleDetails}) => {
         nextArrow: <SampleNextArrow/>,
         responsive: [
             {
-                breakpoint: 1440,
+                breakpoint: 1850,
                 settings: {
                     dots: false,
                     infinite: false,
@@ -46,7 +46,19 @@ const OrgSlider = ({setToggleDetails}) => {
             }
             },
             {
-                breakpoint: 1024,
+                breakpoint: 1850,
+                settings: {
+                    dots: false,
+                    infinite: false,
+                    speed: 500,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    prevArrow: <SamplePrevArrow/>,
+                    nextArrow: <SampleNextArrow/>,
+            }
+            },
+            {
+                breakpoint: 1280,
                 settings: {
                     dots: false,
                     infinite: false,
@@ -58,17 +70,53 @@ const OrgSlider = ({setToggleDetails}) => {
             }
             },
             {
-            breakpoint: 612,
-            settings: {
-                dots: false,
-                infinite: false,
-                speed: 500,
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                prevArrow: <SamplePrevArrow/>,
-                nextArrow: <SampleNextArrow/>,
+                breakpoint: 1024,
+                settings: {
+                    dots: false,
+                    infinite: false,
+                    speed: 500,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    prevArrow: <SamplePrevArrow/>,
+                    nextArrow: <SampleNextArrow/>,
             }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    dots: false,
+                    infinite: false,
+                    speed: 500,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    prevArrow: <SamplePrevArrow/>,
+                    nextArrow: <SampleNextArrow/>,
             }
+            },
+            {
+                breakpoint: 420,
+                settings: {
+                    dots: false,
+                    infinite: false,
+                    speed: 500,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    prevArrow: <SamplePrevArrow/>,
+                    nextArrow: <SampleNextArrow/>,
+            }
+            },
+            {
+                breakpoint: 400,
+                settings: {
+                    dots: false,
+                    infinite: false,
+                    speed: 500,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    prevArrow: <SamplePrevArrow/>,
+                    nextArrow: <SampleNextArrow/>,
+            }
+            },
         ]
     };
 
@@ -77,11 +125,11 @@ const OrgSlider = ({setToggleDetails}) => {
             <section className="w-auto flex flex-col items-center z-10">
                 <article>
                     <div className="flex justify-center -mb-2">
-                        <span className="w-headerMobile sm:w-headerQuarter md:w-headerHalf lg:w-header3Quart xl:w-header text-xl sm:text-3xl lg:text-4xl xl:text-5xl">
+                        <span className="w-headerMobile phone1:w-headerMobile1 phone2:w-headerQuarter smallDesktop:w-headerPhone sm:w-headerTablet tablet:w-headerHalf 3quart:w-header3Quart full:w-slider90 screen:w-header text-full sm:text-3full 3quart:text-4full full:text-5full">
                             Priority
                         </span>
                     </div>
-                    <div className="w-sliderMobile sm:w-sliderQuarter md:w-sliderHalf lg:w-slider3Quart xl:w-slider mx-auto">
+                    <div className="w-sliderMobile phone1:w-sliderMobile1 phone2:w-sliderQuarter smallDesktop:w-sliderPhone sm:w-sliderTablet tablet:w-sliderHalf 3quart:w-slider3Quart full:w-slider90 screen:w-slider mx-auto">
                         <Slider className="sm:p-2 z-10" {...settings}>
                             <OrgCard setToggleDetails={setToggleDetails}/>
                             <OrgCard setToggleDetails={setToggleDetails}/>

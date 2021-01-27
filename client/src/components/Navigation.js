@@ -27,7 +27,7 @@ const Navigation = ({setToggleCategories, toggleCategories, toggleDetails, mobil
     const NavButtons = () => {
         return (
             <React.Fragment>
-                <nav className="w-96 bg-black text-lg md:w-96 md:flex md:justify-between md:items-center md:text-gray-100 md:text-lg">
+                <nav className="w-96 bg-black text-lg sm:w-96 sm:flex sm:justify-between sm:items-center sm:text-gray-100 sm:text-lg">
                     <span className="w-auto">
                         <h2 className="cursor-pointer">
                             <Link to="/">
@@ -77,7 +77,7 @@ const Navigation = ({setToggleCategories, toggleCategories, toggleDetails, mobil
         return (
             <React.Fragment>
                 <div className={toggleAnim ? "w-screen absolute top-16 sm:top-20 left-0 animate-toggleNav fixed z-30" : "w-screen absolute top-16 sm:top-20 left-0 animate-unToggleNav fixed z-30"}>
-                <nav className="w-auto bg-black bg-opacity-90 text-md sm:text-xl grid-cols-1 auto-rows-auto divide-y divide-gray-600 text-gray-100">
+                <nav className="w-auto bg-black bg-opacity-90 text-sm sm:text-xl grid-cols-1 auto-rows-auto divide-y divide-gray-600 text-gray-100">
                     <div className="h-8 w-auto">
                         <Link to="/">
                             <div className="h-8 w-auto flex items-center cursor-pointer">

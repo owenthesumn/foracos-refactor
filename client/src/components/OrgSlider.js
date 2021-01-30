@@ -125,7 +125,7 @@ const OrgSlider = ({setToggleDetails}) => {
             <section className="w-auto flex flex-col items-center z-10">
                 <article>
                     <div className="flex justify-center -mb-2">
-                        <span className="w-headerMobile phone1:w-headerMobile1 phone2:w-headerQuarter smallDesktop:w-headerPhone sm:w-headerTablet tablet:w-headerHalf 3quart:w-header3Quart full:w-slider90 screen:w-header text-full sm:text-3full 3quart:text-4full full:text-5full">
+                        <span className="w-headerMobile phone1:w-headerMobile1 phone2:w-headerQuarter smallDesktop:w-headerPhone sm:w-headerTablet tablet:w-headerHalf 3quart:w-header3Quart full:w-slider90 screen:w-header text-xl sm:text-3xl 3quart:text-4xl full:text-5xl">
                             Priority
                         </span>
                     </div>

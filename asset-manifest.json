@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/foracos-dev/static/css/main.2f3d87a1.chunk.css",
+    "main.js": "/foracos-dev/static/js/main.ce7e320e.chunk.js",
+    "main.js.map": "/foracos-dev/static/js/main.ce7e320e.chunk.js.map",
+    "runtime-main.js": "/foracos-dev/static/js/runtime-main.fedd6871.js",
+    "runtime-main.js.map": "/foracos-dev/static/js/runtime-main.fedd6871.js.map",
+    "static/css/2.cad78346.chunk.css": "/foracos-dev/static/css/2.cad78346.chunk.css",
+    "static/js/2.029e2673.chunk.js": "/foracos-dev/static/js/2.029e2673.chunk.js",
+    "static/js/2.029e2673.chunk.js.map": "/foracos-dev/static/js/2.029e2673.chunk.js.map",
+    "index.html": "/foracos-dev/index.html",
+    "static/css/2.cad78346.chunk.css.map": "/foracos-dev/static/css/2.cad78346.chunk.css.map",
+    "static/css/main.2f3d87a1.chunk.css.map": "/foracos-dev/static/css/main.2f3d87a1.chunk.css.map",
+    "static/js/2.029e2673.chunk.js.LICENSE.txt": "/foracos-dev/static/js/2.029e2673.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/foracos-dev/static/media/slick.c94f7671.ttf",
+    "static/media/index.css": "/foracos-dev/static/media/volunteer.8cfcb270.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fedd6871.js",
+    "static/css/2.cad78346.chunk.css",
+    "static/js/2.029e2673.chunk.js",
+    "static/css/main.2f3d87a1.chunk.css",
+    "static/js/main.ce7e320e.chunk.js"
+  ]
+}
